@@ -1,0 +1,14 @@
+[package]
+name = "DiScribe"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serenity = { version = "0.11.5", features = ["cache", "framework", "standard_framework", "voice", "voice-model"]}
+songbird = "0.3.2"
+tokio = { version = "1.28.0", features = ["full"] }
+tracing = "0.1.37"
+tracing-subscriber = { version = "0.3.17", features = ["fmt", "env-filter"] }
+whisper-rs = "0.8.0"
